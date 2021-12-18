@@ -1,24 +1,26 @@
 # Cardiovascular-Risk-Prediction
 
-INTRODUCTION
+**INTRODUCTION**
 
 Heart disease is one the major cause of moribity and mortality globally. A heart attack happens when the flow of oxygen-rich blood to a section of heart muscle suddenly becomes blocked and the heart can’t get oxygen. If blood flow isn’t restored quickly, the section of heart muscle begins to die.
 
 Doctors and Scientists across the globe have started to look into Machine Learning Techniques to develop screening tools.
 
-OBJECTIVE:
+**OBJECTIVE**:
 
 In this project, we shall be giving you a walk through on the development of a screening tool for predicting whether a patient has a 10-year risk of developing coronary heart disease (CHD) based on their present health conditions using different Machine Learning Techniques.
 
-PROBLEM STATEMENT:
+**PROBLEM STATEMENT**:
 
 Heart disease is the leading cause of morbidity and mortality worldwide, killing more people each year than any other cause. In this project, we shall be giving you a walk through on the development of a screening tool for predicting whether a patient has a 10-year risk of developing coronary heart disease (CHD) using different Machine Learning techniques. The given dataset provides the patients’ information. It includes over 3,390 records and 17 attributes. Each attribute is a potential risk factor. There are both demographic, behavioural, and medical risk factors given for the analysis.
 
-Data Description:
+**Data Description**:
 
-Chd-description
+![image](https://user-images.githubusercontent.com/87635323/146653255-17ba1968-7933-4477-ac6f-84244c7cb0b0.png)
 
-PROJECT WORKFLOW:
+
+
+**PROJECT WORKFLOW**:
 
 Data Cleaning
 Checking for Duplicates – None found
@@ -33,7 +35,8 @@ EDA on Features
 Handling Imbalance Data
 Model Training, Testing & Hyper-Parameter Tuning
 Performance Comparison
-DATA CLEANING:
+
+**DATA CLEANING**:
 
 Handling NaN Values:
 
@@ -43,7 +46,7 @@ Outlier Treatment:
 
 totChol has values > 600 Replacing that with 500
 
-FEATURE ENGINEERING:
+**FEATURE ENGINEERING**:
 
 Binary Encoding / One-Hot Encoding:
 
@@ -51,7 +54,7 @@ sex & is_smoking has (Male/Female) and (Yes/No) data respectively. Since only tw
 
 New Feature – avgBP We have diaBP & sysBP in our dataset, which represents diastolic and systolic BP. For a healthy person BP measure is 120/80. Both these are co-related with each other (78%). avgBP = (sysBP+diaBP)/2
 
-EDA:
+**EDA**:
 
 EDA on Features – Age & Smoking: Risk is High in age group of (42 to 45),(56 to 58) and age above 62 despite they are smoking or not.
 
@@ -68,7 +71,7 @@ Over sampling the minority class
 SMOTE Synthetic Minority Over Sampling Technique Reduces overfitting during oversampling Synthetic Sampling is used.
 Evaluation Metrics: 1. Recall 2. F1 Score 3. ROC Curve
 
-DATA MODELLING AND TRAINING:
+**DATA MODELLING AND TRAINING**:
 
 We shall study the following training models:
 
@@ -77,8 +80,9 @@ We shall study the following training models:
 3.Decision Tree
 4.SVM
 
-CONCLUSION:
+**CONCLUSION**:
 
-Capture2
+![image](https://user-images.githubusercontent.com/87635323/146653319-9002a4d6-e7d6-45ba-8ba1-7d8a67127c17.png)
+
 
 Among all the Classifiers used here, K Nearest Neighbour classifier has the best performance with highest RECALL and F1 SCORE of 89%.
